@@ -1,6 +1,11 @@
 pipeline { 
     agent any
     stages {
+        stage('Installation'){
+            steps {
+                sudo apt update
+            }
+        }
         stage('Clone Git') {
             steps {
                 git 'https://github.com/BThangaraju/Jenkins.git'
