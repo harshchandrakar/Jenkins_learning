@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Installation'){
             steps {
-                sudo apt update
+                echo 'ello'
             }
         }
         stage('Clone Git') {
